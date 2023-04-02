@@ -1,0 +1,87 @@
+.card {
+  display: flex;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  height: 1366px;
+  padding-bottom: 94px;
+  gap: 30px;
+  margin: 0 auto;
+  padding-left: 0px;
+}
+
+.card-grid__item {
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
+  background: $color-white;
+  border: 1px solid #eeeeee;
+  padding-bottom: 30px;
+}
+.card-grid__item:hover,
+.card-grid__item:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.card-grid__image {
+  width: 370px;
+  height: 294px;
+}
+.card-grid__image-title {
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+}
+.card-grid__image-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color-medium-grey;
+  padding-left: 24px;
+}
+
+.card-grid__transition-container {
+  height: 294px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-grid__transition-box {
+  width: 370px;
+  height: 294px;
+  position: absolute;
+  background: $color-light-blue;
+  transform: translateY(101%);
+  transition: transform 250ms linear;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 24px 0px 24px;
+}
+
+.card-grid__item:hover .card-grid__transition-box {
+  transform: translateY(0px);
+}
+
+.card-grid__transition-text {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $color-white;
+}

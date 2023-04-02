@@ -1,0 +1,26 @@
+.customers-grid {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.customers-grid__item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.customers-grid__item:hover,
+.customers-grid__item:focus {
+  border-color: $color-light-blue;
+  fill: $color-light-blue;
+  cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}

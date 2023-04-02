@@ -1,0 +1,84 @@
+.team {
+  height: 648px;
+  top: 1449px;
+  background: $color-light-grey;
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.team-grid__item {
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 428px;
+}
+
+.barber__job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $color-medium-grey;
+  padding-bottom: 16px;
+}
+
+.barber__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.barber {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media__grid {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.social-media__item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  background-color: $color-white;
+  border-radius: 50%;
+  align-items: center;
+  fill: currentColor;
+  color: #afb1b8;
+}
+
+.social-media__item:hover {
+  background-color: $color-light-blue;
+  fill: $color-white;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.social-media__icon {
+  fill: #afb1b8;
+  &:hover {
+    fill: $color-white;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+}

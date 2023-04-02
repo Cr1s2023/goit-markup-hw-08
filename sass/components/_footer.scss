@@ -1,0 +1,138 @@
+.footer {
+  display: flex;
+  height: 251px;
+  background: $color-dark-grey;
+}
+
+.address__item {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.14;
+  text-decoration: none;
+  color: $color-white;
+  flex-direction: column;
+}
+
+.address__contact {
+  color: rgba(255, 255, 255, 0.6);
+  gap: 12px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.webstudio-f {
+  padding-top: 60px;
+  padding-bottom: 28px;
+  text-decoration: none;
+}
+.address__grid {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+.closing {
+  display: inline-flex;
+  flex-direction: column;
+  width: 231px;
+  padding-right: 94px;
+}
+
+.social {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 94px;
+}
+
+.title-footer {
+  color: $color-white;
+}
+
+.social-media__icon-footer {
+  fill: $color-white;
+}
+
+.social-media__footer-item:hover {
+  background-color: $color-light-blue;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.social-media__footer-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  align-items: center;
+}
+
+.form-footer {
+  display: inline-flex;
+  gap: 12px;
+}
+
+label .title-footer {
+  padding-bottom: 20px;
+}
+
+.form-footer__subscribe {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: $color-dark-grey;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.form-footer__subscribe placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer__button {
+  width: 190px;
+  height: 50px;
+  background: $color-light-blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 36px;
+}
+
+.form-footer__subscribe:hover,
+.form-footer__subscribe:focus {
+  border-color: v$color-light-blue;
+  cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+* {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.webstudio-f {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  color: $color-light-blue;
+}
+
+.webstudio-f::after {
+  content: "Studio";
+  color: $color-white;
+}
